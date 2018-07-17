@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:id="@+id/cw_MovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text ="영화제목"/>
+
+
+        <ImageView
+            android:layout_marginLeft="14dp"
+            android:id="@+id/cw_MovieGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <RatingBar
+            android:id="@+id/cw_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"/>
+        <TextView
+            android:textSize="17dp"
+            android:text="평점을 입력해주세요"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id ="@+id/cw_commentInput"
+        android:layout_margin="5dp"
+        android:maxLength="100"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/cw_border"
+        android:hint ="100자 이내로 입력해주세요"
+        android:textSize="18dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        />
+
+    <LinearLayout
+        android:gravity="right"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/cw_btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:background="@drawable/cw_btnborder"/>
+
+        <Button
+            android:textSize="20dp"
+            android:id="@+id/cw_btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:background="@drawable/cw_btnborder"/>
+
+    </LinearLayout>
+
+</LinearLayout>
